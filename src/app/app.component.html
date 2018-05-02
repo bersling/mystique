@@ -1,6 +1,6 @@
 <header>
   <div class="header-container container">
-    <h1>DarkTheme</h1>
+    <h1>Logo</h1>
     <nav>
       <a>Link1</a>
       <a>Link2</a>
@@ -9,11 +9,11 @@
 </header>
 <div class="jumbo">
   <div class="container jumbo-container">
-    <img src="/assets/001-robot.svg" height="200" style="padding: 30px">
+    <img src="/assets/unicorn.svg" height="200">
     <div>
       <h1 class="title">Mystique</h1>
-      <p>
-        Simple yet powerful way <br>to discover new things.
+      <p class="subtitle">
+        A dark and mystic theme <br> to inspire your next webapp.
       </p>
     </div>
   </div>
@@ -27,9 +27,15 @@
       <div class="card-image">
         <img [src]="card.icon" alt="">
       </div>
-      <div class="card-body">
-        {{card.content}}
-      </div>
+      <div class="card-body" [innerHTML]="card.content"></div>
     </div>
   </div>
 </div>
+<footer>
+  <div class="footer-container container">
+    <div>
+      This theme is provided to you by Daniel Niederberger under MIT. Get it at
+      <a href="https://github.com/bersling/mystique">https://github.com/bersling/mystique</a>.
+    </div>
+  </div>
+</footer>

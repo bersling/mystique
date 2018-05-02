@@ -8,17 +8,17 @@ import {Component} from '@angular/core';
 export class AppComponent {
 
     cards = [{
-        title: 'Card 1',
-        content: 'Bla jajdlk faslkjklfdas jklds aljjlkafs kasfdj kasd jlkjlkfda s',
-        icon: '/assets/001-robot-arm.svg'
+        title: 'Dark',
+        content: 'Dark Themes are the new black.<br/>Does that makes sense?',
+        icon: '/assets/002-witch.svg'
     }, {
-        title: 'Card 2',
-        content: 'afdkljj lljalsjfd jaklds adklfs jkldasf jljlkad slalasdfjk ',
-        icon: '/assets/002-cyborg.svg'
+        title: 'Flexbox',
+        content: 'A touch of magic.<br/> Flexbox for 1D Layouts.',
+        icon: '/assets/003-magic-wand.svg'
     }, {
-        title: 'Card 3',
-        content: 'ajlkdsf jlkadsjkl jklad sjlkjaklf jajd jdf jkl ajlkj lkajk fldsjlkdsfa jjlkasf ',
-        icon: '/assets/003-robot-1.svg'
-    }, ];
+        title: 'CSS Grid',
+        content: 'Be a courageous.<br/>Adopt CSS Grid.',
+        icon: '/assets/001-ghost.svg'
+    } ];
 
 }

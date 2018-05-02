@@ -39,6 +39,17 @@ header {
     }
   }
 
+  .title {
+    font-size: 44px;
+    color: white;
+    width: 100%;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+
 }
 
 .value-bullets {
@@ -46,13 +57,6 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
-}
-
-
-.title {
-  font-size: 44px;
-  color: white;
-  width: 100%;
 }
 
 
@@ -96,6 +100,9 @@ $gray7: lighten($black, 20%);
   $card-border-radius: 5px;
   border-radius: $card-border-radius;
   background: $gray8;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   .card-header, .card-body {
     padding-left: $card-padding-left-right;
     padding-right: $card-padding-left-right;
@@ -113,12 +120,14 @@ $gray7: lighten($black, 20%);
   .card-image {
     display:flex;
     justify-content: center;
-    height: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    flex-basis: 100px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: $gray7;
     img {
-      height: 100%;
+      display: flex;
     }
   }
 
@@ -129,6 +138,26 @@ $gray7: lighten($black, 20%);
     border-bottom-right-radius: $card-border-radius;
     line-height: 1.61;
     background: $gray8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
   }
 }
 
+footer {
+  background: $gray7;
+  color: $white;
+  font-size: 11px;
+  a {
+    color: $white;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
