@@ -1,8 +1,11 @@
-$primary: #29B82E;
-$secondary: #9844F7;
-$tertiary: #2736F7;
+$accent: #00ff00;
+$green: #00ff00;
+$primary: #9556ff;
+$secondary: #0000ff;
+$yellow: #FFFF00;
 $black: #000000;
 $white: #FFFFFF;
+$amber: #FFC107;
 
 $header-height: 60px;
 
@@ -21,9 +24,9 @@ header {
   margin-top: $header-height;
   $jumbo-height:  calc(100vh - #{$header-height}); // TODO: heights...
   min-height: $jumbo-height;
-  background: linear-gradient(217deg, rgba($primary, 1), rgba($black, 0.7) 40%, rgba($black, 0) 90%),
-  linear-gradient(90deg, rgba($secondary, 1), rgba($black, 0.7) 50%, rgba($black, 0) 90%),
-  linear-gradient(300deg, rgba($tertiary, 1), rgba($black, 0.7) 70%);
+  background: linear-gradient(217deg, rgba($accent, 1), rgba($black, 0.7) 40%, rgba($black, 0) 90%),
+  linear-gradient(90deg, rgba($primary, 1), rgba($black, 0.7) 50%, rgba($black, 0) 90%),
+  linear-gradient(300deg, rgba($secondary, 1), rgba($black, 0.7) 70%);
 
   .jumbo-container {
     display: flex;
@@ -85,31 +88,47 @@ $grid-row-gap: 30px;
 }
 
 $gray9: lighten($black, 10%);
+$gray8: lighten($black, 15%);
+$gray7: lighten($black, 20%);
 
 .card {
   $card-padding-left-right: 20px;
   $card-border-radius: 5px;
   border-radius: $card-border-radius;
-  background: $gray9;
+  background: $gray8;
   .card-header, .card-body {
     padding-left: $card-padding-left-right;
     padding-right: $card-padding-left-right;
   }
   .card-header {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-top-left-radius: $card-border-radius;
     border-top-right-radius: $card-border-radius;
+    background: $gray8;
     h3 {
-      color: rgba(0,255,0,1);
+      color: $white;
     }
   }
-  .card-body {
+  .card-image {
+    display:flex;
+    justify-content: center;
+    height: 100px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background: $gray7;
+    img {
+      height: 100%;
+    }
+  }
+
+  .card-body {
+    padding-top: 20px;
     padding-bottom: 20px;
     border-bottom-left-radius: $card-border-radius;
     border-bottom-right-radius: $card-border-radius;
     line-height: 1.61;
+    background: $gray8;
   }
 }
 
